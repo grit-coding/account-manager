@@ -1,6 +1,6 @@
 import { IsString, IsOptional, IsNumber } from 'class-validator';
 
-interface CreateAccountDtoInterface {
+export interface CreateAccountDtoInterface {
     firstName: string;
     lastName: string;
     email: string;

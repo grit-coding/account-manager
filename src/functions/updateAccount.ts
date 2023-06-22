@@ -26,7 +26,7 @@ export const handler = async (event: APIGatewayProxyEvent, context: Context) => 
         }
     }
 
-    const eventBodyDto = new UpdateAccountDto(JSON.parse(event.body));
+    const eventBodyDto = new UpdateAccountDto(updateBody);
 
     try {
         await validateOrReject(eventBodyDto);
