@@ -79,4 +79,4 @@ Deletes the account with the given account ID.
 To use this API, you will need to provide your API key in the header of your HTTP requests. The key should be included as the value for the `x-api-key` field.
 
 ## Local Setup and Deployment
-For instructions on how to run this project locally and deploy to AWS Lambda, refer to the [Local Setup and Deployment Guide]().
+For instructions on how to run this project locally and deploy to AWS Lambda, refer to the [Local Setup and Deployment Guide](https://github.com/grit-coding/account-manager/blob/main/docs/local-README.md).
