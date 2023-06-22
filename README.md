@@ -58,11 +58,8 @@ Updates account information for the given account ID.
 
 ```json
 {
-    "firstName": "John",
     "lastName": "Smith",
-    "email": "john.smith@example.com",
     "address": "123 Oxford street, Leeds",
-    "phoneNumber": 0987654321
 }
 ```
 
