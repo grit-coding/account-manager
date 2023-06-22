@@ -1,0 +1,10 @@
+deleteAccount:
+  handler: src/functions/deleteAccount.handler
+  # layers:
+  #   - !Ref: AccountManagerLambdaLayer 
+  events:
+    - http:
+        path: account/{id}
+        method: delete
+        cors: true
+        private: true

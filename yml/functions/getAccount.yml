@@ -1,0 +1,10 @@
+getAccount:
+  handler: src/functions/getAccount.handler
+  # layers:
+  #   - !Ref: AccountManagerLambdaLayer 
+  events:
+    - http:
+        path: account/{id}
+        method: get
+        cors: true
+        private: true

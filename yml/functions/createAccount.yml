@@ -1,0 +1,10 @@
+createAccount:
+  handler: src/functions/createAccount.handler
+  # layers:
+  #   - !Ref: AccountManagerLambdaLayer 
+  events:
+    - http:
+        path: account
+        method: post
+        cors: true
+        private: true

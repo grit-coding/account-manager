@@ -1,0 +1,48 @@
+service: account-manager
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  region: eu-west-2
+  stage: dev
+  environment:
+    ACCOUNTS_TABLE: ${self:custom.accountsDynamoDB}
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - dynamodb:*
+          Resource: '*'
+  apiGateway:
+    apiKeys:
+        - FirstApiKey
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
+
+package:
+  individually: true
+  patterns: ${file(yml/common/package-patterns.yml)}
+
+# layers:
+#   accountManager:
+#     path: layer
+#     name: ${self:service}-layer
+#     description: Layer for shared dependencies
+#     compatibleRuntimes:
+#       - nodejs18.x
+
+functions:
+  - ${file(yml/functions/getAccount.yml)}
+  - ${file(yml/functions/createAccount.yml)}
+  - ${file(yml/functions/updateAccount.yml)}
+  - ${file(yml/functions/deleteAccount.yml)}
+
+resources:
+  - ${file(yml/resources/dynamodb.yml)}
+
+custom:
+  accountsDynamoDB: ${self:service}-accounts

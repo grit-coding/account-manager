@@ -1,0 +1,21 @@
+Resources:
+  AccountTable:
+    Type: 'AWS::DynamoDB::Table'
+    Properties:
+      TableName: ${self:custom.accountsDynamoDB}
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+        - AttributeName: email
+          AttributeType: S
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+      BillingMode: PAY_PER_REQUEST
+      GlobalSecondaryIndexes:
+        - IndexName: email-index
+          KeySchema:
+              - AttributeName: email
+                KeyType: HASH
+          Projection:
+              ProjectionType: ALL

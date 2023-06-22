@@ -1,0 +1,10 @@
+{
+    "name": "layer",
+    "version": "1.0.0",
+    "description": "share dependencies between lambda functions",
+    "dependencies": {
+        "@types/aws-lambda": "^8.10.119",
+        "class-validator": "^0.14.0",
+        "luxon": "^3.3.0"
+    }
+}

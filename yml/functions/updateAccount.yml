@@ -1,0 +1,10 @@
+updateAccount:
+  handler: src/functions/updateAccount.handler
+  # layers:
+  #   - !Ref: AccountManagerLambdaLayer 
+  events:
+    - http:
+        path: account/{id}
+        method: patch
+        cors: true
+        private: true
