@@ -6,7 +6,7 @@ To run this repo locally, you need to follow these steps:
 
 - [Node.js](https://nodejs.org/en/)
 - [NPM](https://www.npmjs.com/)
-- [AWS CLI](https://aws.amazon.com/cli/)
+- [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - [Serverless Framework](https://www.serverless.com/framework/docs/getting-started)
 
 ### Steps
