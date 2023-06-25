@@ -16,7 +16,7 @@ To run this repo locally, you need to follow these steps:
 2. **Install dependencies:** Navigate to the project directory and install the necessary dependencies.
 
     ```
-    cd reponame
+    cd account-manager
     npm install
     ```
 
