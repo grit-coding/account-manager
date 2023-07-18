@@ -1,10 +1,11 @@
 # Account Manager API
+The "Account Manager API" is a public repository specifically designed for teaching purposes, demonstrating an AWS setup using API Gateway, Lambda, and DynamoDB. It provides practical API examples for creating, retrieving, updating, and deleting accounts.
 
-This API allows you to manage user accounts.
+Feel free to download, fork, and deploy this repository to your own AWS account. To do so, follow the detailed instructions provided in [Local Setup and Deployment Guide](https://github.com/grit-coding/account-manager/blob/main/docs/local-README.md). This will enable you to set up the project locally and deploy it to AWS Lambda.
 
 ## Base URL
 
-The Base URL is the root URL for all of the API, if you ever see a reference to `{BASE_URL}` in the documentation, replace it with `https://leiws3k0k7.execute-api.eu-west-2.amazonaws.com/dev/`.
+The Base URL serves as the root URL for all of the API endpoints. If you ever come across a reference to `{BASE_URL}` in the documentation, you'll need to replace it with your own Base URL. Upon deploying this to your AWS account, a unique Base URL will be provided to you in the console.
 
 ## API Endpoints
 
@@ -74,6 +75,3 @@ Deletes the account with the given account ID.
 ## API Key
 
 To use this API, you will need to provide your API key in the header of your HTTP requests. The key should be included as the value for the `x-api-key` field.
-
-## Local Setup and Deployment
-For instructions on how to run this project locally and deploy to AWS Lambda, refer to the [Local Setup and Deployment Guide](https://github.com/grit-coding/account-manager/blob/main/docs/local-README.md).
