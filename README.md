@@ -1,5 +1,5 @@
 # Account Manager API
-The "Account Manager API" is a public repository specifically designed for teaching purposes, demonstrating an AWS setup using API Gateway, Lambda, and DynamoDB. It provides practical API examples for creating, retrieving, updating, and deleting accounts.
+This repository is created for teaching purposes, demonstrating an AWS setup using API Gateway, Lambda, and DynamoDB. It provides practical API examples for creating, retrieving, updating, and deleting accounts.
 
 Feel free to download, fork, and deploy this repository to your own AWS account. To do so, follow the detailed instructions provided in [Local Setup and Deployment Guide](https://github.com/grit-coding/account-manager/blob/main/docs/local-README.md). This will enable you to set up the project locally and deploy it to AWS Lambda.
 
